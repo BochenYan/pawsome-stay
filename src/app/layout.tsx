@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} bg-[#f5f0e8] text-[#2a2018]`}>
+      <body className={`${dmSans.className} animated-bg`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

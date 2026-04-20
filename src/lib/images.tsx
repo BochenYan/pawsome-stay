@@ -1,0 +1,22 @@
+export const heroImages = [
+  "/images/hero-1.jpg",
+  "/images/hero-2.jpg",
+  "/images/hero-3.jpg",
+  "/images/hero-4.jpg",
+  "/images/hero-5.jpg",
+  "/images/hero-6.jpg",
+  "/images/hero-7.jpg",
+  "/images/hero-8.jpg",
+  "/images/hero-9.jpg",
+  "/images/hero-10.jpg",
+  "/images/hero-11.jpg",
+  "/images/hero-12.jpg",
+  "/images/hero-13.jpg",
+  "/images/hero-14.jpg",
+  "/images/hero-15.jpg",
+  "/images/hero-16.jpg",
+  "/images/hero-17.jpg",
+  "/images/hero-18.jpg",
+  "/images/hero-19.jpg",
+  "/images/hero-20.jpg"
+];

@@ -9,3 +9,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #f5f0e8, #a8d8a8, #f0e6d3, #7ec8c8);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+.animated-bg-green {
+  background: linear-gradient(-45deg, #2d4a3e, #3d6b5a, #2a4538, #1e3329);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+.animated-bg-terra {
+  background: linear-gradient(-45deg, #c4704f, #a85a3a, #d4845f, #b86040);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
