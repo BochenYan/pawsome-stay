@@ -98,9 +98,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {!isMobile && (
+        {(
           <div style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center", padding: "0 2rem" }}>
-            <div style={{ width: "100%", maxWidth: "620px", aspectRatio: "4/5", borderRadius: "2rem", overflow: "hidden", boxShadow: "0 32px 72px rgba(45,74,62,0.24)", position: "relative" }}>
+            <div style={{ width: "100%", maxWidth: isMobile ? "100%" : "620px", aspectRatio: isMobile ? "3/4" : "4/5", borderRadius: "2rem", overflow: "hidden", boxShadow: "0 32px 72px rgba(45,74,62,0.24)", position: "relative" }}>
               <img
                 src={images[currentImg]}
                 alt="Happy pet"
