@@ -68,7 +68,8 @@ export default function Hero() {
       }}>
         <div className="hero-bg-img" style={{
           backgroundImage: `url('${images[currentImg]}')`,
-          opacity: fade ? (isMobile ? 0.04 : 0.18) : 0,
+          opacity: fade ? (isMobile ? 0.12 : 0.18) : 0,
+          backgroundPosition: isMobile ? "center top" : "center",
         }} />
         <div>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(45,74,62,0.08)", border: "1px solid rgba(45,74,62,0.2)", color: "#2d4a3e", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.08em", padding: "0.4rem 1rem", borderRadius: "100px", marginBottom: "1.5rem" }}>
