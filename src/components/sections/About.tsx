@@ -18,11 +18,17 @@ export default function About() {
       alignItems: "center",
       textAlign: isMobile ? "center" : "left"
     }}>
-      {!isMobile && (
-        <div style={{ width: "280px", height: "280px", borderRadius: "50%", overflow: "hidden", border: "3px solid rgba(196,112,79,0.4)", flexShrink: 0 }}>
-          <img src="/images/about-1.jpg" alt="About" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-        </div>
-      )}
+      <div style={{
+        width: isMobile ? "160px" : "280px",
+        height: isMobile ? "160px" : "280px",
+        borderRadius: "50%",
+        overflow: "hidden",
+        border: "3px solid rgba(196,112,79,0.4)",
+        flexShrink: 0,
+        margin: isMobile ? "0 auto" : "0"
+      }}>
+        <img src="/images/about-1.jpg" alt="About" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </div>
 
       <div>
         <div style={{ fontSize: "0.72rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(232,149,109,0.9)", marginBottom: "0.6rem" }}>
