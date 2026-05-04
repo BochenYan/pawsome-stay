@@ -28,7 +28,7 @@ export const t = {
     },
     about: {
       label: "About Me",
-      title: "Hi, I'm Tiffany Wu.",
+      title: "Hi, I'm Lisa J.",
       p1: "I've loved animals my entire life, and I started Pawsome Stay because every pet deserves genuine care — not just supervision.",
       p2: "Based in Toronto, I host pets in my own home so they always feel comfortable and safe. Small groups only — your pet gets real, individual attention.",
       qualities: ["Pet First Aid certified", "Experience with dogs, cats, and small animals", "Daily updates with photos and videos", "Max 3 pets at a time — always personal"],
@@ -81,7 +81,7 @@ export const t = {
     },
     about: {
       label: "À propos de moi",
-      title: "Bonjour, je suis Tiffany Wu.",
+      title: "Bonjour, je suis Lisa J.",
       p1: "J'ai aimé les animaux toute ma vie, et j'ai créé Pawsome Stay parce que chaque animal mérite de vrais soins — pas seulement de la surveillance.",
       p2: "Basée à Toronto, j'accueille les animaux dans ma propre maison pour qu'ils se sentent toujours à l'aise et en sécurité. Petits groupes seulement — votre animal reçoit une attention individuelle.",
       qualities: ["Certifiée premiers secours pour animaux", "Expérience avec chiens, chats et petits animaux", "Mises à jour quotidiennes avec photos et vidéos", "Maximum 3 animaux à la fois — toujours personnel"],
