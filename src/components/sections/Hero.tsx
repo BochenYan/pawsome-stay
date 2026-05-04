@@ -68,7 +68,7 @@ export default function Hero() {
       }}>
         <div className="hero-bg-img" style={{
           backgroundImage: `url('${images[currentImg]}')`,
-          opacity: fade ? (isMobile ? 0.20 : 0.30) : 0,
+          opacity: fade ? (isMobile ? 0.04 : 0.18) : 0,
         }} />
         <div>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(45,74,62,0.08)", border: "1px solid rgba(45,74,62,0.2)", color: "#2d4a3e", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.08em", padding: "0.4rem 1rem", borderRadius: "100px", marginBottom: "1.5rem" }}>
@@ -91,6 +91,9 @@ export default function Hero() {
             </a>
             <a href="#services" style={{ color: "#2d4a3e", fontWeight: 500, fontSize: "0.95rem", textDecoration: "none" }}>
               {text.ctaSecondary}
+            </a>
+            <a href="https://www.rover.com/ambas-refer-a-friend/NvP5wdOQ?sit=lisaj78575" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6e62", fontWeight: 500, fontSize: "0.85rem", textDecoration: "none", borderBottom: "1px solid rgba(122,92,68,0.3)", paddingBottom: "1px" }}>
+              {locale === "en" ? "View us on Rover →" : locale === "fr" ? "Nous voir sur Rover →" : "在Rover上查看我们 →"}
             </a>
           </div>
         </div>
