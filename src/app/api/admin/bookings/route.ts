@@ -5,7 +5,9 @@ async function getSheet() {
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+      private_key: process.env.GOOGLE_PRIVATE_KEY
+        ? process.env.GOOGLE_PRIVATE_KEY.split(String.raw`\n`).join("\n")
+        : "",
     },
     scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
@@ -19,7 +21,7 @@ export async function GET(req: NextRequest) {
   const sheets = await getSheet();
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.GOOGLE_SHEET_ID,
-    range: "Sheet1!A:K",
+    range: "Sheet1!A:E",
   });
 
   const rows = res.data.values || [];
@@ -29,13 +31,7 @@ export async function GET(req: NextRequest) {
     name: row[1],
     email: row[2],
     phone: row[3],
-    petName: row[4],
-    petType: row[5],
-    service: row[6],
-    startDate: row[7],
-    endDate: row[8],
-    notes: row[9],
-    status: row[10] || "pending",
+    status: row[4] || "pending",
   }));
 
   return NextResponse.json({ bookings });
@@ -50,7 +46,7 @@ export async function PATCH(req: NextRequest) {
 
   await sheets.spreadsheets.values.update({
     spreadsheetId: process.env.GOOGLE_SHEET_ID,
-    range: `Sheet1!K${rowIndex + 1}`,
+    range: `Sheet1!E${rowIndex + 1}`,
     valueInputOption: "USER_ENTERED",
     requestBody: { values: [[status]] },
   });
