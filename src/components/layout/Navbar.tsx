@@ -6,7 +6,7 @@ import { t } from "@/lib/translations";
 import { useIsMobile } from "@/lib/useIsMobile";
 
 export default function Navbar() {
-  const { locale, setLocale } = useLanguage("zh");
+  const { locale, setLocale } = useLanguage();
   const text = t[locale].nav;
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
